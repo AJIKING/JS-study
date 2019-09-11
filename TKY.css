@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+}
+html{
+  margin:0;
+  padding:0;
+}
+
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+  background: #fff9f9;
+}
+.content{
+  max-width: 1000px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+.content-min{
+  min-width: 1000px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+a{
+  text-decoration: none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style: none;
+}
+
+.clear {
+  clear: left;
+  clear:right;
+}
+
+
+header{
+  background-color: rgba(255, 62, 62, 1);
+  height:60px;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0px;                   /* 位置(上0px) */
+  left: 0px;
+}
+
+.header-name{
+  float:left;
+  font-weight: bold;
+
+  margin-top:12px;
+}
+.header-name span{
+  font-size:170%;
+}
+
+ .header-main-menu li{
+  text-align: center;
+  float:right;
+  display:inline-block;
+  line-height: 60px;
+  width: 140px;
+  color:white;
+}
+.header-main-list{
+  margin-right: 10px;
+}
+.header-main-list ul{
+  background-color: rgba(255, 136, 136, 1);
+  position:absolute;
+  width: 140px;
+  display:none;
+  top:60px;
+}
+.header-main-menu ul li a{
+  color:white;
+  display: block;
+  border:1px solid white;
+}
+.header-main-menu span{
+  text-align: center;
+  float:right;
+  display:inline-block;
+  line-height: 60px;
+  width: 140px;
+  color:white;
+}
+.header-main-list:hover > span{
+  background-color: rgba(255, 136, 136, 1);
+}
+.header-main-menu ul li a:hover{
+  background-color: rgba(100, 136, 136, 1);
+  text-decoration: none;
+}
+
+.container{
+  margin-top: 60px;
+}
+.slide{
+  position:relative;
+	overflow:hidden;
+	height:500px;
+}
+.slide ul{
+  position:absolute;
+	width:3000px;
+}
+.slide li{
+  float:left;
+	width:1000px;
+	list-style-type:none;
+}
+.slide ul li img{
+  width: 1000px;
+  height: 500px;
+  position: relative;
+}
+
+.prevBtn i{
+  width: 29px;
+  height: 50px;
+  position: absolute;
+  top: 225px;
+  left: 20px;
+  font-size: 350%;
+  cursor: pointer;
+}
+.nextBtn i{
+  width: 29px;
+  height: 50px;
+  position: absolute;
+  top: 225px;
+  right: 20px;
+  font-size: 350%;
+  cursor: pointer;
+}
+
+.greeting{
+  margin-top: 100px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: rgba(250,100,100,.5);
+  font-size: 130%;
+}
+.greeting-main{
+  text-align:center;
+  width:100%;
+  height:100%;
+}
+.greeting-words{
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  height:100%;
+  vertical-align: top;
+}
+.words{
+  /* margin-bottom: 20px; */
+}
+.name{
+  display: inline-block;
+  width: 100%;
+  height:20%;
+  text-align: right;
+}
+.greeting-img{
+  width: 32%;
+  display: inline-block;
+}
+.greeting-img img{
+  width:100%;
+  height:100%;
+}
+.main-menu{
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.kind-menu{
+  display: inline-block;
+  width: 30%;
+  margin:0 auto;
+  margin-bottom: 0;
+  border: 3px solid #ff8860;
+  border-radius: 3px;
+}
+.kind-menu i{
+  font-size: 300%;
+  margin: 10px 0;
+}
+
+.icon{
+  color:#ff8860;
+}
+
+.kind-menu a{
+  display: inline-block;
+  width: 100%;
+  height:100%;
+  text-decoration: none;
+}
+
+.kind-menu span{
+  display:block;
+  margin-bottom: 5px;
+  color:#ff8860;
+  font-size: 150%;
+}
+
+.kind-menu a:hover {
+  background:#ff8860;
+}
+.kind-menu a:hover > span , .kind-menu a:hover >i{
+  color: white;
+}
+
+footer{
+  background: rgba(10, 10, 10, .9);
+  height:250px;
+  margin-top: 30px;
+}
+.map{
+  color:#ffeaec;
+
+
+}
+.map h2{
+  text-align: center;
+  font-size: 120%;
+
+}
+.navigation{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align:center;
+}
+.map-google{
+  width: 32%;
+  display: inline-block;
+}
+.map-nav{
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+.map-nav span{
+  font-size:150%;
+}
+.map-nav span a{
+  color:#ffeaec;
+}
+.map-google iframe{
+  width:100%;
+  height:100%;
+}
